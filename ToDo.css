@@ -1,15 +1,41 @@
-body{
-  margin: 40%;
-  padding: 0;
-  background-color: black;
-  align-content: center;
-  height: inherit;
+body
+{
+   margin: 0;
+   padding: 0;
+   z-index: -1;
+   background-image: url('wiild.jpg');
+
 }
+#cirle
+{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+}
+
 #Boss{
+  z-index: 1;
   width: 400px;
   height: 300px;
-  background-color: green;
+  margin-left: 500px;
+  background-color: #0e3f54;
   border: 1px solid wit;
   border-radius: 10%;
   text-align: center;
+}
+#btn{
+  width: 80px;
+  height: 50px;
+  background-color: #17abeb;
+  border: 1px solid #155e7d;
+  border-radius: 50%;
+}
+#inp{
+  width: 120px;
+  height: 45px;
+  background-color: #17abeb;
+  border: 1px solid #155e7d;
+  border-radius: 40%;
+  padding-left: 15px;
 }

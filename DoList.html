@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>ToDoList</title>
     <link rel="stylesheet" href="ToDo.css">
+    <link rel="stylesheet" href="vivify/vivify.css">
+    <script type="text/javascript" src="style.js"></script>
   </head>
   <body>
+    <canvas id="circle"></canvas>
     <div id="Boss">
         <h1>Ajouter Votre Task</h1>
-        <input type="text" id="inp" placeholder="Entrez Votre Task !!!">
-        <input type="submit" id="btn" value="Valider" onclick="Add()">
+        <input type="text" id="inp" placeholder="Entrez Votre Task !!!" >
+        <input type="submit" id="btn" value="Valider"  onclick="Add()" class="popOut">
 
     </div>
     <script type="text/javascript">
@@ -18,10 +21,10 @@
         var val = document.getElementById('inp').value;
         var inpu = document.createElement("input");
         inpu.setAttribute("type","checkbox");
-        inpu.setAttribute("id","chek");
+        inpu.setAttribute("class","chek");
 
         var spa = document.createElement("span");
-        spa.setAttribute("id","vv");
+        spa.setAttribute("class","vv");
         var valspan = document.createTextNode(val);
         var sautLine = document.createElement("br");
         container.appendChild(sautLine);
@@ -33,17 +36,23 @@
 
       }
       function cheek(){
-        var ch = document.getElementById("chek");
-        var spaan = document.getElementById("vv");
-        if(ch.checked)
-        {
+        var ch = document.getElementsByClassName('chek');
+        var spaan = document.getElementsByClassName("vv");
 
-          spaan.style.textDecoration = "line-through";
+        for (var i = 0; i < ch.length; i++) {
+          if(ch[i].checked)
+          {
+
+            spaan[i].style.textDecoration = "line-through";
+          }
+          else
+          {
+              spaan[i].style.textDecoration = "none";
+          }
+
         }
-        else
-        {
-            spaan.style.textDecoration = "none";
-        }
+
+
 
       }
 
