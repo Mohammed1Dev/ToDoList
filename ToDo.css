@@ -3,7 +3,7 @@ body
    margin: 0;
    padding: 0;
    z-index: -1;
-   background-image: url('wiild.jpg');
+   background-color: #00804d;
 
 }
 #cirle
@@ -19,23 +19,27 @@ body
   width: 400px;
   height: 300px;
   margin-left: 500px;
-  background-color: #0e3f54;
+  background-color: 	#73e600;
   border: 1px solid wit;
   border-radius: 10%;
   text-align: center;
 }
+h1{
+  text-shadow: 2px 2px gray;
+}
 #btn{
   width: 80px;
   height: 50px;
-  background-color: #17abeb;
+  background-color: #004d2e;
+  color: white;
   border: 1px solid #155e7d;
-  border-radius: 50%;
+  border-radius: 42%;
 }
 #inp{
-  width: 120px;
+  width: 220px;
   height: 45px;
-  background-color: #17abeb;
+  background-color: #004d2e;
   border: 1px solid #155e7d;
-  border-radius: 40%;
+  border-radius: 18%;
   padding-left: 15px;
 }
